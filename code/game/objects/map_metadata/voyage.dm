@@ -4,7 +4,7 @@
 	title = "Voyage (75x75x4)"
 	no_winner ="The ship is on the way."
 //	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 0
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(BRITISH) = /area/caribbean/british/ship/lower,
+		list(BRITISH) = /area/complex/british/ship/lower,
 		)
 	age = "1713"
 	ordinal_age = 3

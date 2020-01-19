@@ -2,7 +2,7 @@
 	ID = MAP_HERACLEA
 	title = "Heraclea (150x75x1)"
 	lobby_icon_state = "ancient"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 300
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -12,8 +12,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(ROMAN) = /area/caribbean/roman,
-		list(GREEK) = /area/caribbean/greek
+		list(ROMAN) = /area/complex/roman,
+		list(GREEK) = /area/complex/greek
 		)
 	age = "313 B.C."
 	ordinal_age = 1

@@ -117,7 +117,7 @@
 //	var/oldclimate = oldarea.climate
 	if (oldarea.location == AREA_OUTSIDE)
 //TODO: different roofed area climates
-//		var/area/caribbean/roofed/A = new/area/caribbean/roofed(src.loc)
+//		var/area/complex/roofed/A = new/area/complex/roofed(src.loc)
 //		A.climate = oldclimate
 		for(var/obj/structure/tent/T in range(1,src))
 			T.update_icon()
@@ -128,7 +128,7 @@
 		if (istype(O, /obj/structure/tent))
 			user << "There is already a structure here."
 			return
-	var/area/caribbean/oldarea = get_area(src)
+	var/area/complex/oldarea = get_area(src)
 	if (oldarea.location == AREA_INSIDE)
 		user << "This location is covered already, you can't set up a tent here."
 		return

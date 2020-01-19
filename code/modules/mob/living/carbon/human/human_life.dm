@@ -90,7 +90,7 @@
 
 /*
 	var/area/currentarea = get_area(src)
-	if (istype(currentarea, /area/caribbean/no_mans_land/invisible_wall))
+	if (istype(currentarea, /area/complex/no_mans_land/invisible_wall))
 		if (faction_text == map.faction1 && !map.faction1_can_cross_blocks())
 			gib()
 		else if (faction_text == map.faction2 && !map.faction2_can_cross_blocks())

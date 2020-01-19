@@ -4,7 +4,7 @@
 	title = "Nomads (New World) (430x200x2)"
 	no_winner ="The round is proceeding normally."
 	lobby_icon_state = "civ13"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/sea)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/sea)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "5000 B.C."
 	civilizations = TRUE
@@ -33,8 +33,8 @@
 	var/list/arealist_g = list()
 /obj/map_metadata/nomads_new_world/New()
 	..()
-	var/list/totalturfs = get_area_turfs(/area/caribbean/nomads/forest/Jungle)
-	totalturfs += get_area_turfs(/area/caribbean/nomads/forest/savanna)
+	var/list/totalturfs = get_area_turfs(/area/complex/nomads/forest/Jungle)
+	totalturfs += get_area_turfs(/area/complex/nomads/forest/savanna)
 	spawn(1200)
 		for (var/i = 1, i <= 100)
 			var/turf/areaspawn = safepick(totalturfs)

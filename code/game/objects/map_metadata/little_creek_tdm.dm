@@ -4,7 +4,7 @@
 	title = "Big Trouble in Little Creek (TDM) (100x100x2)"
 	lobby_icon_state = "wildwest"
 	no_winner ="The fighting for the town is still going on."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 600
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "1873"
 	ordinal_age = 4

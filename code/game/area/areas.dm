@@ -103,7 +103,7 @@
 
 	var/override_ambience = FALSE
 
-	for (var/typecheck in list(/area/caribbean/british, /area/caribbean/pirates, /area/caribbean/no_mans_land, /area/caribbean/forest, /area/caribbean/void))
+	for (var/typecheck in list(/area/complex/british, /area/complex/pirates, /area/complex/no_mans_land, /area/complex/forest, /area/complex/void))
 		if (istype(oldarea, typecheck))
 			if (!istype(newarea, typecheck))
 				override_ambience = TRUE

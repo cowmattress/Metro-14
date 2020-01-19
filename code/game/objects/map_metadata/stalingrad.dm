@@ -4,7 +4,7 @@
 	title = "Stalingrad (90x250x2)"
 	lobby_icon_state = "ww2"
 	no_winner ="The battle for the city is still going on."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/taiga)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/taiga)
 	respawn_delay = 0
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(RUSSIAN) = /area/caribbean/german/reichstag/roof/objective,
-		list(GERMAN) = /area/caribbean/german/reichstag/roof/objective,
+		list(RUSSIAN) = /area/complex/german/reichstag/roof/objective,
+		list(GERMAN) = /area/complex/german/reichstag/roof/objective,
 		)
 	age = "1942"
 	ordinal_age = 6
@@ -100,7 +100,7 @@ obj/map_metadata/stalingrad/proc/points_check()
 		var/prev_control = a1_control
 		for (var/mob/living/carbon/human/H in player_list)
 			var/area/temp_area = get_area(H)
-			if (istype(temp_area, /area/caribbean/no_mans_land/capturable/one))
+			if (istype(temp_area, /area/complex/no_mans_land/capturable/one))
 				if (H.faction_text == "GERMAN" && H.stat == CONSCIOUS)
 					c1++
 				else if (H.faction_text == "RUSSIAN" && H.stat == CONSCIOUS)
@@ -123,7 +123,7 @@ obj/map_metadata/stalingrad/proc/points_check()
 		prev_control = a2_control
 		for (var/mob/living/carbon/human/H in player_list)
 			var/area/temp_area = get_area(H)
-			if (istype(temp_area, /area/caribbean/no_mans_land/capturable/two))
+			if (istype(temp_area, /area/complex/no_mans_land/capturable/two))
 				if (H.faction_text == "GERMAN" && H.stat == CONSCIOUS)
 					c1++
 				else if (H.faction_text == "RUSSIAN" && H.stat == CONSCIOUS)
@@ -146,7 +146,7 @@ obj/map_metadata/stalingrad/proc/points_check()
 		prev_control = a3_control
 		for (var/mob/living/carbon/human/H in player_list)
 			var/area/temp_area = get_area(H)
-			if (istype(temp_area, /area/caribbean/no_mans_land/capturable/three))
+			if (istype(temp_area, /area/complex/no_mans_land/capturable/three))
 				if (H.faction_text == "GERMAN" && H.stat == CONSCIOUS)
 					c1++
 				else if (H.faction_text == "RUSSIAN" && H.stat == CONSCIOUS)

@@ -3,7 +3,7 @@
 	ID = MAP_REICHSTAG
 	title = "Reichstag (100x100x1)"
 	lobby_icon_state = "ww2"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	no_winner ="The reichstag is under German control."
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(RUSSIAN) = /area/caribbean/british,
-		list(GERMAN) = /area/caribbean/german/reichstag/roof/objective,
+		list(RUSSIAN) = /area/complex/british,
+		list(GERMAN) = /area/complex/german/reichstag/roof/objective,
 		)
 	age = "1945"
 	ordinal_age = 6

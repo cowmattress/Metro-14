@@ -3,7 +3,7 @@
 	ID = MAP_SAMMIRHAYEED
 	title = "Sammir Hayeed (80x80x1)"
 	lobby_icon_state = "medieval"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 300
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(ARAB) = /area/caribbean/arab,
-		list(FRENCH) = /area/caribbean/colonies,
+		list(ARAB) = /area/complex/arab,
+		list(FRENCH) = /area/complex/colonies,
 		)
 	age = "1013"
 	ordinal_age = 3

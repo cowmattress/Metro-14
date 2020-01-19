@@ -290,7 +290,7 @@
 	if (!item) return
 
 	// hack to stop people from throwing molotovs over the grace wall - Kachnov
-	if (ishuman(src) && !istype(get_area(src), /area/caribbean/admin))
+	if (ishuman(src) && !istype(get_area(src), /area/complex/admin))
 		var/mob/living/carbon/human/H = src
 		if (H.original_job)
 			if (istype(item, /obj/item/weapon/reagent_containers/food/drinks/bottle))

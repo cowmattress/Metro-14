@@ -3,7 +3,7 @@ K
 	ID = MAP_GLADIATORS
 	title = "Gladiators (100x80x1)"
 	lobby_icon_state = "ancient"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/one, /area/caribbean/no_mans_land/invisible_wall/two,/area/caribbean/no_mans_land/invisible_wall/three,/area/caribbean/no_mans_land/invisible_wall/four)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/one, /area/complex/no_mans_land/invisible_wall/two,/area/complex/no_mans_land/invisible_wall/three,/area/complex/no_mans_land/invisible_wall/four)
 	respawn_delay = 0
 	squad_spawn_locations = FALSE
 	no_winner ="The round is proceeding normally."
@@ -12,7 +12,7 @@ K
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(ROMAN) = /area/caribbean/british,
+		list(ROMAN) = /area/complex/british,
 		)
 	age = "313 B.C."
 	ordinal_age = 1

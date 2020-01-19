@@ -2,7 +2,7 @@
 	ID = MAP_CIVILIZATIONS
 	title = "Two Kingdoms (300x100x2)"
 	lobby_icon_state = "civ13"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -11,7 +11,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "1013"
 	no_winner = "The round is proceeding normally."
