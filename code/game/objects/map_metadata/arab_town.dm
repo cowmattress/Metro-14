@@ -2,7 +2,7 @@
 	ID = MAP_ARAB_TOWN
 	title = "Arab Town (100x100x1)"
 	lobby_icon_state = "modern"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/desert)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/desert)
 	respawn_delay = 1200
 	no_winner = "The operation is still underway."
 	squad_spawn_locations = FALSE
@@ -12,8 +12,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(AMERICAN) = /area/caribbean/british,
-		list(ARAB) = /area/caribbean/arab
+		list(AMERICAN) = /area/complex/british,
+		list(ARAB) = /area/complex/arab
 		)
 	age = "2006"
 	ordinal_age = 8
@@ -155,7 +155,7 @@ var/no_loop_arab = FALSE
 	ID = MAP_ARAB_TOWN_2
 	title = "Arab Town II (70x90x1)"
 	lobby_icon_state = "modern"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/desert)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/desert)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -164,8 +164,8 @@ var/no_loop_arab = FALSE
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(AMERICAN) = /area/caribbean/british,
-		list(ARAB) = /area/caribbean/arab
+		list(AMERICAN) = /area/complex/british,
+		list(ARAB) = /area/complex/arab
 		)
 	age = "2006"
 	ordinal_age = 8

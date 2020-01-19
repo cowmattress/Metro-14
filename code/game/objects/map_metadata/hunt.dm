@@ -2,7 +2,7 @@
 	ID = MAP_HUNT
 	title = "Hunt (175x175x2)"
 	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 	no_winner ="The round is proceeding normally."
@@ -12,8 +12,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(INDIANS) = /area/caribbean/british,
-		list(PIRATES) = /area/caribbean/british,
+		list(INDIANS) = /area/complex/british,
+		list(PIRATES) = /area/complex/british,
 		)
 	age = "1713"
 	ordinal_age = 3
@@ -31,7 +31,7 @@
 	..()
 	spawn(1200)
 		for (var/i = 1, i <= 50, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/island/river))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/island/river))
 			new/obj/structure/piranha(areaspawn)
 	spawn(18000)
 		seasons()

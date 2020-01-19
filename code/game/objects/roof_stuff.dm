@@ -20,17 +20,17 @@
 	var/onfire = FALSE
 //	invisibility = 101
 	flammable = TRUE
-	var/current_area_type = /area/caribbean
+	var/current_area_type = /area/complex
 
 /obj/roof/New()
 	..()
-	var/area/caribbean/CURRENTAREA = get_area(src)
+	var/area/complex/CURRENTAREA = get_area(src)
 //	var/oldclimate = CURRENTAREA.climate
 	if (CURRENTAREA.location == AREA_OUTSIDE)
 		current_area_type = CURRENTAREA.type
-		new/area/caribbean/roofed(get_turf(src))
+		new/area/complex/roofed(get_turf(src))
 // TODO: Different roofed climates
-//		var/area/caribbean/roofed/A = new/area/caribbean/roofed(src.loc)
+//		var/area/complex/roofed/A = new/area/complex/roofed(src.loc)
 //		A.climate = oldclimate
 	for (var/atom/movable/lighting_overlay/LO in get_turf(src))
 		LO.update_overlay()
@@ -99,7 +99,7 @@
 		covers_time /= H.getStatCoeff("strength")
 		covers_time /= (H.getStatCoeff("crafting") * H.getStatCoeff("crafting"))
 	var/area/currentarea = get_area(get_step(user, user.dir))
-	if (istype(currentarea, /area/caribbean/no_mans_land/invisible_wall))
+	if (istype(currentarea, /area/complex/no_mans_land/invisible_wall))
 		user << "You cannot build a roof here."
 		return
 	for (var/obj/roof/RF in get_step(user, user.dir))

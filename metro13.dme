@@ -114,7 +114,7 @@
 #include "code\game\lobby_music_player.dm"
 #include "code\game\sound.dm"
 #include "code\game\area\areas.dm"
-#include "code\game\area\caribbean.dm"
+#include "code\game\area\complex.dm"
 #include "code\game\dna\dna2.dm"
 #include "code\game\dna\dna2_helpers.dm"
 #include "code\game\jobs\job.dm"

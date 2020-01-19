@@ -2,7 +2,7 @@
 	ID = MAP_OMAHA
 	title = "Omaha Beach (100x100x1)"
 	lobby_icon_state = "ww2"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -11,8 +11,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(AMERICAN) = /area/caribbean/british,
-		list(GERMAN) = /area/caribbean/german/inside/objective,
+		list(AMERICAN) = /area/complex/british,
+		list(GERMAN) = /area/complex/german/inside/objective,
 		)
 	age = "1944"
 	ordinal_age = 6

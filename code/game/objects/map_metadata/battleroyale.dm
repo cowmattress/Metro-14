@@ -2,7 +2,7 @@
 	ID = MAP_ROBUSTA
 	title = "Isla Robusta Battle Royale (125x125x1)"
 	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall)
 	respawn_delay = 0
 	squad_spawn_locations = FALSE
 	no_winner ="The fighting is still going."
@@ -12,7 +12,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(PIRATES) = /area/caribbean/british/ship, //it isnt in the map so nobody wins by capture
+		list(PIRATES) = /area/complex/british/ship, //it isnt in the map so nobody wins by capture
 		)
 	age = "1713"
 	ordinal_age = 3

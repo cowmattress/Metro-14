@@ -844,7 +844,7 @@
 		if (prob(60))
 			var/obj/item/stack/ore/copper/mineral = new/obj/item/stack/ore/copper(src)
 			mineral.amount = rand(8,12)
-			if (istype(get_area(src), /area/caribbean/void/caves/special))
+			if (istype(get_area(src), /area/complex/void/caves/special))
 				mineral.amount *= 2
 			H << "<span class='danger'>You found some <font color=[get_material_by_name("copper").icon_colour]><b>copper</font></b> ore!</span>"
 			change_the_turf()
@@ -853,7 +853,7 @@
 		else
 			var/obj/item/stack/ore/tin/mineral = new/obj/item/stack/ore/tin(src)
 			mineral.amount = rand(8,12)
-			if (istype(get_area(src), /area/caribbean/void/caves/special))
+			if (istype(get_area(src), /area/complex/void/caves/special))
 				mineral.amount *= 2
 			H << "<span class='danger'>You found some <font color=[get_material_by_name("tin").icon_colour]><b>tin</font></b> ore!</span>"
 			change_the_turf()
@@ -862,7 +862,7 @@
 	if (prob(40) && map.ordinal_age >= 1)
 		var/obj/item/stack/ore/iron/mineral = new/obj/item/stack/ore/iron(src)
 		mineral.amount = rand(8,12)
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some <font color=[get_material_by_name("iron").icon_colour]><b>iron</font></b> ore!</span>"
 		change_the_turf()
@@ -872,7 +872,7 @@
 		if (map.ordinal_age <= 1)
 			var/obj/item/stack/ore/coal/mineral = new/obj/item/stack/ore/coal(src)
 			mineral.amount = rand(12,16)
-			if (istype(get_area(src), /area/caribbean/void/caves/special))
+			if (istype(get_area(src), /area/complex/void/caves/special))
 				mineral.amount *= 2
 			H << "<span class='danger'>You found some <font color=#A9A9A9><b>coal</font></b>!</span>"// no material.
 			change_the_turf()
@@ -882,7 +882,7 @@
 			if (pickperc == 1)
 				var/obj/item/stack/ore/coal/mineral = new/obj/item/stack/ore/coal(src)
 				mineral.amount = rand(12,16)
-				if (istype(get_area(src), /area/caribbean/void/caves/special))
+				if (istype(get_area(src), /area/complex/void/caves/special))
 					mineral.amount *= 2
 				H << "<span class='danger'>You found some <font color=#A9A9A9><b>coal</font></b>!</span>" // no material
 				change_the_turf()
@@ -891,7 +891,7 @@
 			else if (pickperc == 2)
 				var/obj/item/stack/ore/saltpeter/mineral = new/obj/item/stack/ore/saltpeter(src)
 				mineral.amount = 4
-				if (istype(get_area(src), /area/caribbean/void/caves/special))
+				if (istype(get_area(src), /area/complex/void/caves/special))
 					mineral.amount *= 2
 				H << "<span class='danger'>You found some <font color=#f3e781]><b>saltpeter</font></b>!</span>" // no material
 				change_the_turf()
@@ -900,7 +900,7 @@
 			else if (pickperc == 3)
 				var/obj/item/stack/ore/sulphur/mineral = new/obj/item/stack/ore/sulphur(src)
 				mineral.amount = 4
-				if (istype(get_area(src), /area/caribbean/void/caves/special))
+				if (istype(get_area(src), /area/complex/void/caves/special))
 					mineral.amount *= 2
 				if (mineral && mineral.get_material())
 					H << "<span class='danger'>You found some <font color=#fffa78><b>sulphur</font></b>!</span>" // no material
@@ -911,7 +911,7 @@
 				if (prob(50))
 					var/obj/item/stack/ore/lead/mineral = new/obj/item/stack/ore/lead(src)
 					mineral.amount = 4
-					if (istype(get_area(src), /area/caribbean/void/caves/special))
+					if (istype(get_area(src), /area/complex/void/caves/special))
 						mineral.amount *= 2
 					H << "<span class='danger'>You found some <font color=[get_material_by_name("lead").icon_colour]><b>lead</font> ore</b>!</span>"
 					change_the_turf()
@@ -921,7 +921,7 @@
 					if (prob(40))
 						var/obj/item/stack/ore/uranium/mineral = new/obj/item/stack/ore/uranium(src)
 						mineral.amount = 4
-						if (istype(get_area(src), /area/caribbean/void/caves/special))
+						if (istype(get_area(src), /area/complex/void/caves/special))
 							mineral.amount *= 2
 						H << "<span class='danger'>You found some <font color=#A5A500><b>uranium</font></b>!</span>" // no material
 						change_the_turf()
@@ -930,7 +930,7 @@
 					else
 						var/obj/item/stack/ore/mercury/mineral = new/obj/item/stack/ore/mercury(src)
 						mineral.amount = 4
-						if (istype(get_area(src), /area/caribbean/void/caves/special))
+						if (istype(get_area(src), /area/complex/void/caves/special))
 							mineral.amount *= 2
 						H << "<span class='danger'>You found some <font color=#882c1d><b>mercury</font></b>!</span>" // no material
 						change_the_turf()
@@ -939,7 +939,7 @@
 	if (prob(5))
 		var/obj/item/stack/ore/silver/mineral = new/obj/item/stack/ore/silver(src)
 		mineral.amount = 4
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some <font color=[get_material_by_name("silver").icon_colour]><b>silver</font> ore</b>!</span>"
 		change_the_turf()
@@ -948,7 +948,7 @@
 	if (prob(2))
 		var/obj/item/stack/ore/gold/mineral = new/obj/item/stack/ore/gold(src)
 		mineral.amount = 4
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some <font color=[get_material_by_name("gold").icon_colour]><b>gold</font> ore</b>!</span>"
 		change_the_turf()
@@ -957,7 +957,7 @@
 	if (prob(1))
 		var/obj/item/stack/ore/diamond/mineral = new/obj/item/stack/ore/diamond(src)
 		mineral.amount = 4
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some raw <font color=[get_material_by_name("diamond").icon_colour]><b>diamonds</b></font>!</span>"
 		change_the_turf()
@@ -967,7 +967,7 @@
 		if (prob(3))
 			var/obj/item/stack/material/fossil/mineral = new/obj/item/stack/material/fossil(src)
 			mineral.amount = 1
-			if (istype(get_area(src), /area/caribbean/void/caves/special))
+			if (istype(get_area(src), /area/complex/void/caves/special))
 				new/obj/item/stack/material/fossil(src)
 			H << "<span class='danger'>You found a <font color=[get_material_by_name("bone").icon_colour]><b>fossil</font></b>!</span>"
 			change_the_turf()
@@ -977,7 +977,7 @@
 			if (prob(1))
 				var/obj/item/stack/material/fossil/mineral = new/obj/item/stack/material/fossil(src)
 				mineral.amount = 1
-				if (istype(get_area(src), /area/caribbean/void/caves/special))
+				if (istype(get_area(src), /area/complex/void/caves/special))
 					new/obj/item/stack/material/fossil(src)
 				H << "<span class='danger'>You found a <font color=[get_material_by_name("bone").icon_colour]><b>fossil</font></b>!</span>"
 				change_the_turf()
@@ -986,20 +986,20 @@
 	if(istype(T, /turf/floor/dirt/underground/sandy) || (area_above && area_above.climate == "desert"))
 		var/obj/item/stack/material/sandstone/mineral = new/obj/item/stack/material/sandstone(src)
 		mineral.amount = rand(8,16)
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some <font color=[get_material_by_name("sandstone").icon_colour]><b>sandstone</font> rocks</b>!</span>"
 	else if(istype(T, /turf/floor/dirt/underground/icy) || (area_above && area_above.climate == "tundra"))
 		//TODO ADD ICE AND FOSSILS
 		var/obj/item/stack/material/stone/mineral = new/obj/item/stack/material/stone(src)
 		mineral.amount = rand(8,16)
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some usable <font color=[get_material_by_name("stone").icon_colour]><b>stone</font> rocks</b>!</span>"
 	else
 		var/obj/item/stack/material/stone/mineral = new/obj/item/stack/material/stone(src)
 		mineral.amount = rand(8,16)
-		if (istype(get_area(src), /area/caribbean/void/caves/special))
+		if (istype(get_area(src), /area/complex/void/caves/special))
 			mineral.amount *= 2
 		H << "<span class='danger'>You found some usable <font color=[get_material_by_name("stone").icon_colour]><b>stone</font> rocks</b>!</span>"
 	change_the_turf()

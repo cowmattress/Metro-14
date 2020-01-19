@@ -4,7 +4,7 @@
 	title = "Nomads (Wasteland) (235x235x2)"
 	lobby_icon_state = "civ13"
 	no_winner ="The round is proceeding normally."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "2013"
 	civilizations = TRUE
@@ -150,7 +150,7 @@
 			TREES.change_season()
 		for (var/turf/floor/dirt/D)
 			var/area/A = get_area(D)
-			if (prob(50) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust) && !istype(D, /turf/floor/dirt/ploughed) && A.location == AREA_OUTSIDE && !istype(A,/area/caribbean/forest/dirt))
+			if (prob(50) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust) && !istype(D, /turf/floor/dirt/ploughed) && A.location == AREA_OUTSIDE && !istype(A,/area/complex/forest/dirt))
 				D.ChangeTurf(/turf/floor/grass)
 				D.radiation = world_radiation/10
 			D.update_icon()
@@ -162,7 +162,7 @@
 			change_weather(WEATHER_RAIN)
 		spawn(15000)
 			change_weather(WEATHER_SNOW)
-			for (var/turf/floor/dirt/D in get_area_turfs(/area/caribbean/nomads/forest))
+			for (var/turf/floor/dirt/D in get_area_turfs(/area/complex/nomads/forest))
 				var/area/A = get_area(D)
 				if (A.location == AREA_OUTSIDE && prob(40) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust))
 					D.ChangeTurf(/turf/floor/dirt/winter)

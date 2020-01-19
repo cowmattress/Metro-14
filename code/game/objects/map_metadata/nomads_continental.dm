@@ -3,7 +3,7 @@
 	ID = MAP_NOMADS_CONTINENTAL
 	title = "Nomads (Continents) (200x400x2)"
 	lobby_icon_state = "civ13"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 	no_winner = "The round is proceeding normally."
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "5000 B.C."
 	civilizations = TRUE
@@ -35,11 +35,11 @@
 	..()
 	spawn(2500)
 		for (var/i = 1, i <= 65, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/sea/sea))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/sea/sea))
 			new/obj/structure/fish(areaspawn)
 	spawn(2500)
 		for (var/i = 1, i <= 30, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/nomads/forest/Jungle/river))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/nomads/forest/Jungle/river))
 			new/obj/structure/piranha(areaspawn)
 	spawn(18000)
 		seasons()

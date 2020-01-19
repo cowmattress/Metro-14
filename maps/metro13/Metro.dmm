@@ -1,12 +1,12 @@
-"a" = (/turf/wall/rockwall,/area/caribbean)
-"b" = (/turf/wall/cement_wall,/area/caribbean)
-"c" = (/turf/floor/plating/road,/area/caribbean)
-"d" = (/obj/structure/rails,/turf/floor/plating/road,/area/caribbean)
-"e" = (/turf/floor/plating/steel,/area/caribbean)
-"f" = (/obj/structure/table/marble,/turf/floor/plating/steel,/area/caribbean)
-"g" = (/obj/structure/bed/chair/office/light{icon_state = "officechair_white"; dir = 8},/turf/floor/plating/steel,/area/caribbean)
-"h" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/floor/plating/steel,/area/caribbean)
-"i" = (/obj/structure/table/wood,/turf/floor/plating/steel,/area/caribbean)
+"a" = (/turf/wall/rockwall,/area/complex)
+"b" = (/turf/wall/cement_wall,/area/complex)
+"c" = (/turf/floor/plating/road,/area/complex)
+"d" = (/obj/structure/rails,/turf/floor/plating/road,/area/complex)
+"e" = (/turf/floor/plating/steel,/area/complex)
+"f" = (/obj/structure/table/marble,/turf/floor/plating/steel,/area/complex)
+"g" = (/obj/structure/bed/chair/office/light{icon_state = "officechair_white"; dir = 8},/turf/floor/plating/steel,/area/complex)
+"h" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/floor/plating/steel,/area/complex)
+"i" = (/obj/structure/table/wood,/turf/floor/plating/steel,/area/complex)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

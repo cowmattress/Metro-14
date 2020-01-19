@@ -3,7 +3,7 @@
 	title = "Four Colonies (225x225x2)"
 	lobby_icon_state = "imperial"
 	no_winner ="The round is proceeding normally."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 7200 // 12 minutes!
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -15,10 +15,10 @@
 		)
 	roundend_condition_sides = list(
 	//nonexistent in this map, to prevent win by capture
-		list(SPANISH) = /area/caribbean/british,
-		list(PORTUGUESE) = /area/caribbean/british,
-		list(FRENCH) = /area/caribbean/british,
-		list(SPANISH) = /area/caribbean/british,
+		list(SPANISH) = /area/complex/british,
+		list(PORTUGUESE) = /area/complex/british,
+		list(FRENCH) = /area/complex/british,
+		list(SPANISH) = /area/complex/british,
 		)
 	age = "1713"
 	ordinal_age = 3

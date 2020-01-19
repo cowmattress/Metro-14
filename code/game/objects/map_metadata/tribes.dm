@@ -4,7 +4,7 @@
 	title = "Tribes (225x225x2)"
 	no_winner ="The round is proceeding normally."
 	lobby_icon_state = "civ13"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/temperate)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/temperate)
 	respawn_delay = 3600 // 6 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "the lost time"
 	ordinal_age = 2
@@ -115,7 +115,7 @@
 			change_weather(WEATHER_RAIN)
 		spawn(15000)
 			change_weather(WEATHER_SNOW)
-			for (var/turf/floor/dirt/D in get_area_turfs(/area/caribbean/no_mans_land/temperate))
+			for (var/turf/floor/dirt/D in get_area_turfs(/area/complex/no_mans_land/temperate))
 				var/area/A = get_area(D)
 				if (A.location == AREA_OUTSIDE && prob(40) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust))
 					D.ChangeTurf(/turf/floor/dirt/winter)

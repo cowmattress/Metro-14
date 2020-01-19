@@ -4,7 +4,7 @@
 	title = "Nomads (Jungle) (300x300x2)"
 	lobby_icon_state = "civ13"
 	no_winner ="The round is proceeding normally."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "5000 B.C."
 	civilizations = TRUE
@@ -36,11 +36,11 @@
 	..()
 	spawn(1200)
 		for (var/i = 1, i <= 180, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/nomads/river))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/nomads/river))
 			new/obj/structure/piranha(areaspawn)
 	spawn(600)
 		for (var/i = 1, i <= 23, i++)
-			var/turf/areaspawn2 = safepick(get_area_turfs(/area/caribbean/nomads/forest))
+			var/turf/areaspawn2 = safepick(get_area_turfs(/area/complex/nomads/forest))
 			new/obj/structure/anthill(areaspawn2)
 
 	spawn(1800)

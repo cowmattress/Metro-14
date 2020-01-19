@@ -3,7 +3,7 @@
 	ID = MAP_ROBUSTA
 	title = "Isla Robusta (125x125x1)"
 	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 900
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -14,9 +14,9 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(PORTUGUESE) = /area/caribbean/british/land,
-		list(SPANISH) = /area/caribbean/pirates/land,
-		list(INDIANS) = /area/caribbean/indians,
+		list(PORTUGUESE) = /area/complex/british/land,
+		list(SPANISH) = /area/complex/pirates/land,
+		list(INDIANS) = /area/complex/indians,
 		)
 	age = "1713"
 	ordinal_age = 3

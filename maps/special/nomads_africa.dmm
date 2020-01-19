@@ -1,8 +1,8 @@
-"a" = (/turf/floor/dirt,/area/caribbean)
-"b" = (/turf/floor/beach/water/deep/saltwater,/area/caribbean)
-"c" = (/turf/floor/beach/sand/desert,/area/caribbean)
-"d" = (/turf/floor/grass/jungle/savanna,/area/caribbean)
-"e" = (/turf/floor/grass/jungle,/area/caribbean)
+"a" = (/turf/floor/dirt,/area/complex)
+"b" = (/turf/floor/beach/water/deep/saltwater,/area/complex)
+"c" = (/turf/floor/beach/sand/desert,/area/complex)
+"d" = (/turf/floor/grass/jungle/savanna,/area/complex)
+"e" = (/turf/floor/grass/jungle,/area/complex)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

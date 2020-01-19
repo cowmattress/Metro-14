@@ -4,7 +4,7 @@
 	title = "Tsaritsyn (120x100x1)"
 	lobby_icon_state = "ww1"
 	no_winner ="The church is under Soviet control."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 600
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(RUSSIAN) = /area/caribbean/british,
-		list(CIVILIAN) = /area/caribbean/russian/land/inside/command,
+		list(RUSSIAN) = /area/complex/british,
+		list(CIVILIAN) = /area/complex/russian/land/inside/command,
 		)
 	age = "1919"
 	ordinal_age = 5

@@ -269,7 +269,7 @@
 	if (!DT)
 		return FALSE
 	if (driver && istype(DT, /turf/floor/beach/water) || istype(DT, /turf/floor/trench/flooded))
-		if (istype(DT, /turf/floor/beach/water/deep/saltwater) && istype(DT.loc, /area/caribbean/sea))
+		if (istype(DT, /turf/floor/beach/water/deep/saltwater) && istype(DT.loc, /area/complex/sea))
 			driver << "<span class='danger'>You can't go further into the sea with a raft!</span>"
 			return FALSE
 		if (driver in get_turf(src))

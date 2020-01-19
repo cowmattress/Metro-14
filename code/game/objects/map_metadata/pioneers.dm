@@ -3,7 +3,7 @@
 	ID = MAP_PIONEERS
 	title = "Pioneers (200x200x2)"
 	lobby_icon_state = "wildwest"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 7200 // 12 minutes!
 	squad_spawn_locations = FALSE
 	no_winner ="The round is proceeding normally."
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british,
-		list(INDIANS) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british,
+		list(INDIANS) = /area/complex/british
 		)
 	age = "1873"
 	ordinal_age = 4
@@ -84,7 +84,7 @@
 			TREES.change_season()
 		for (var/turf/floor/dirt/D)
 			var/area/A = get_area(D)
-			if (prob(50) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust) && !istype(D, /turf/floor/dirt/ploughed) && A.location == AREA_OUTSIDE && !istype(A,/area/caribbean/tribes/swamp))
+			if (prob(50) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust) && !istype(D, /turf/floor/dirt/ploughed) && A.location == AREA_OUTSIDE && !istype(A,/area/complex/tribes/swamp))
 				D.ChangeTurf(/turf/floor/grass)
 			D.update_icon()
 		for (var/turf/floor/dirt/burned/BD)
@@ -95,7 +95,7 @@
 			change_weather(WEATHER_RAIN)
 		spawn(15000)
 			change_weather(WEATHER_SNOW)
-			for (var/turf/floor/dirt/D in get_area_turfs(/area/caribbean/nomads/forest))
+			for (var/turf/floor/dirt/D in get_area_turfs(/area/complex/nomads/forest))
 				var/area/A = get_area(D)
 				if (A.location == AREA_OUTSIDE && prob(40) && !istype(D, /turf/floor/dirt/underground) && !istype(D, /turf/floor/dirt/dust))
 					D.ChangeTurf(/turf/floor/dirt/winter)

@@ -4,7 +4,7 @@
 	title = "Jungle Colony (155x225x2)"
 	no_winner ="The round is proceeding normally."
 	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 7200 // 12 minutes!
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -15,10 +15,10 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(INDIANS) = /area/caribbean/british,
-		list(CIVILIAN) = /area/caribbean/british,
-		list(PIRATES) = /area/caribbean/british,
-		list(SPANISH) = /area/caribbean/british,
+		list(INDIANS) = /area/complex/british,
+		list(CIVILIAN) = /area/complex/british,
+		list(PIRATES) = /area/complex/british,
+		list(SPANISH) = /area/complex/british,
 		)
 	age = "1713"
 	ordinal_age = 3

@@ -3,7 +3,7 @@
 	ID = MAP_ISLAND
 	title = "Skull Island (125x125x2)"
 	lobby_icon_state = "imperial"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 600
 	squad_spawn_locations = FALSE
 	no_winner ="No faction has captured the enemy's base."
@@ -15,8 +15,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(BRITISH) = /area/caribbean/british/ship/,
-		list(PIRATES) = /area/caribbean/pirates/land/inside
+		list(BRITISH) = /area/complex/british/ship/,
+		list(PIRATES) = /area/complex/pirates/land/inside
 		)
 	age = "1713"
 	ordinal_age = 3

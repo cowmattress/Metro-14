@@ -1,6 +1,6 @@
-"a" = (/turf/floor/dirt,/area/caribbean)
-"b" = (/turf/floor/dirt/underground,/area/caribbean)
-"c" = (/obj/covers/vault,/turf/floor/dirt/underground,/area/caribbean)
+"a" = (/turf/floor/dirt,/area/complex)
+"b" = (/turf/floor/dirt/underground,/area/complex)
+"c" = (/obj/covers/vault,/turf/floor/dirt/underground,/area/complex)
 
 (1,1,1) = {"
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
