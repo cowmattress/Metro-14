@@ -65,6 +65,7 @@
 			return
 		else
 	return
+
 /obj/covers/wood
 	name = "wood floor"
 	icon = 'icons/turf/flooring/wood.dmi'
@@ -162,6 +163,32 @@
 	layer = 1.99
 	flammable = FALSE
 	explosion_resistance = 2
+	material = "Stone"
+
+/obj/covers/metro/metroedge
+	name = "metro floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "metroedge"
+	passable = TRUE
+	not_movable = TRUE
+	amount = 0
+	wood = FALSE
+	layer = 1.99
+	flammable = FALSE
+	explosion_resistance = 4
+	material = "Stone"
+
+/obj/covers/metro/metrofull
+	name = "metro floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "metrofull"
+	passable = TRUE
+	not_movable = TRUE
+	amount = 0
+	wood = FALSE
+	layer = 1.99
+	flammable = FALSE
+	explosion_resistance = 4
 	material = "Stone"
 
 /obj/covers/slatefloor
