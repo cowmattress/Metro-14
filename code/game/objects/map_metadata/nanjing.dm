@@ -3,7 +3,7 @@
 	ID = MAP_NANJING
 	title = "Nanjing (120x200x2)"
 	lobby_icon_state = "ww2"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -12,8 +12,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(JAPANESE) = /area/caribbean/japanese/land/inside/command,
-		list(CHINESE) = /area/caribbean/russian/land/inside/command,
+		list(JAPANESE) = /area/complex/japanese/land/inside/command,
+		list(CHINESE) = /area/complex/russian/land/inside/command,
 		)
 	age = "1939"
 	ordinal_age = 6

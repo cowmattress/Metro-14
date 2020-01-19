@@ -378,7 +378,7 @@ s
 
 			var/H_area_check = H_area
 			if (H_area_check)
-				H_area_check = istype(H_area_check, /area/caribbean)
+				H_area_check = istype(H_area_check, /area/complex)
 			var/mob_faction = "none"
 			if (map.civilizations)
 				mob_faction = H.civilization

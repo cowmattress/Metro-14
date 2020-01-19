@@ -3,7 +3,7 @@
 	ID = MAP_HOSTAGES
 	title = "Hostage Rescue (100x100x1)"
 	lobby_icon_state = "modern"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	min_autobalance_players = 100
@@ -14,8 +14,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(AMERICAN) = /area/caribbean/greek,
-		list(ARAB) = /area/caribbean/greek
+		list(AMERICAN) = /area/complex/greek,
+		list(ARAB) = /area/complex/greek
 		)
 	age = "2014"
 	ordinal_age = 8
@@ -172,9 +172,9 @@ obj/map_metadata/hostages/job_enabled_specialcheck(var/datum/job/J)
 	for (var/mob/living/simple_animal/hostage/DH in world)
 		if (DH.stat != DEAD)
 			var/area/currarea = get_area(DH)
-			if (istype(currarea, /area/caribbean/british))
+			if (istype(currarea, /area/complex/british))
 				rescued_hostages++
-			else if (istype(currarea, /area/caribbean/arab))
+			else if (istype(currarea, /area/complex/arab))
 				held_hostages++
 		else if (DH.stat == DEAD)
 			dead_hostages++
@@ -186,9 +186,9 @@ obj/map_metadata/hostages/job_enabled_specialcheck(var/datum/job/J)
 	for (var/mob/living/carbon/human/PR in world)
 		if (PR.stat != DEAD && PR.handcuffed)
 			var/area/currarea2 = get_area(PR)
-			if (istype(currarea2, /area/caribbean/british/land/inside/objective))
+			if (istype(currarea2, /area/complex/british/land/inside/objective))
 				faction1_prisoners++
-			else if (istype(currarea2, /area/caribbean/arab/caves/prison))
+			else if (istype(currarea2, /area/complex/arab/caves/prison))
 				faction2_prisoners++
 	faction1_points += faction1_prisoners
 	faction2_points += faction2_prisoners*3

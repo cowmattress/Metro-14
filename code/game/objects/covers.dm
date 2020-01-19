@@ -21,7 +21,7 @@
 	var/wood = TRUE
 	var/onfire = FALSE
 	flammable = TRUE
-	var/current_area_type = /area/caribbean
+	var/current_area_type = /area/complex
 	var/incomplete = FALSE
 	explosion_resistance = TRUE
 	var/bullethole_count = 0
@@ -65,6 +65,7 @@
 			return
 		else
 	return
+
 /obj/covers/wood
 	name = "wood floor"
 	icon = 'icons/turf/flooring/wood.dmi'
@@ -162,6 +163,32 @@
 	layer = 1.99
 	flammable = FALSE
 	explosion_resistance = 2
+	material = "Stone"
+
+/obj/covers/metro/metroedge
+	name = "metro floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "metroedge"
+	passable = TRUE
+	not_movable = TRUE
+	amount = 0
+	wood = FALSE
+	layer = 1.99
+	flammable = FALSE
+	explosion_resistance = 4
+	material = "Stone"
+
+/obj/covers/metro/metrofull
+	name = "metro floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "metrofull"
+	passable = TRUE
+	not_movable = TRUE
+	amount = 0
+	wood = FALSE
+	layer = 1.99
+	flammable = FALSE
+	explosion_resistance = 4
 	material = "Stone"
 
 /obj/covers/slatefloor
@@ -1205,7 +1232,7 @@
 /obj/covers/New()
 	..()
 	if (wall && !incomplete)
-		var/area/caribbean/CURRENTAREA = get_area(src)
+		var/area/complex/CURRENTAREA = get_area(src)
 		if (CURRENTAREA.location == AREA_OUTSIDE)
 			current_area_type = CURRENTAREA.type
 			new/obj/roof(get_turf(src))
@@ -1226,8 +1253,8 @@
 
 
 /obj/covers/Destroy()
-	var/area/caribbean/CURRENTAREA = get_area(src)
-	if (!istype(CURRENTAREA, /area/caribbean/void/caves))
+	var	/CURRENTAREA = get_area(src)
+	if (!istype(CURRENTAREA, /area/complex/void/caves))
 		if (wall && !incomplete)
 			new current_area_type(get_turf(src))
 			visible_message("The roof collapses!")

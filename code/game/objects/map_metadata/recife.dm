@@ -4,7 +4,7 @@
 	title = "Recife (100x100x1)"
 	lobby_icon_state = "imperial"
 	no_winner ="The fighting for the town is still going on."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 900
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -14,8 +14,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(DUTCH) = /area/caribbean/colonies/spanish, //on purpose, to prevent capture
-		list(PORTUGUESE) = /area/caribbean/colonies/portuguese
+		list(DUTCH) = /area/complex/colonies/spanish, //on purpose, to prevent capture
+		list(PORTUGUESE) = /area/complex/colonies/portuguese
 		)
 	age = "1713"
 	ordinal_age = 3

@@ -3,7 +3,7 @@
 	ID = MAP_KURSK
 	title = "Kursk (100x150x1)"
 	lobby_icon_state = "ww2"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/temperate)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/temperate)
 	respawn_delay = 1200
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -12,8 +12,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(RUSSIAN) = /area/caribbean/russian/,
-		list(GERMAN) = /area/caribbean/german/,
+		list(RUSSIAN) = /area/complex/russian/,
+		list(GERMAN) = /area/complex/german/,
 		)
 	age = "1943"
 	ordinal_age = 6

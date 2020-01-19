@@ -4,7 +4,7 @@ var/list/exterior_turfs = list(/turf/floor/grass,
 							/turf/floor/plating/concrete,
 							)
 
-var/list/interior_areas = list(/area/caribbean/houses,
+var/list/interior_areas = list(/area/complex/houses,
 							)
 
 // atmos stuff

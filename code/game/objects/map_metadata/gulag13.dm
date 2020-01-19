@@ -4,7 +4,7 @@
 	title = "GULAG 13 (120x100x1)"
 	no_winner ="The round is proceeding normally."
 	lobby_icon_state = "camp"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/tundra)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/tundra)
 	respawn_delay = 3600
 	squad_spawn_locations = FALSE
 	faction_organization = list(
@@ -13,8 +13,8 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(RUSSIAN) = /area/caribbean/british,
-		list(CIVILIAN) = /area/caribbean/russian/land/inside/command,
+		list(RUSSIAN) = /area/complex/british,
+		list(CIVILIAN) = /area/complex/russian/land/inside/command,
 		)
 	age = "1946"
 	ordinal_age = 6
@@ -126,7 +126,7 @@ obj/map_metadata/gulag13/job_enabled_specialcheck(var/datum/job/J)
 			var/datum/job/civilian/prisoner/PJ = H.original_job
 			var/curval = 0
 			var/area/A = get_area(H)
-			if (istype(A, /area/caribbean/nomads/ice/target))
+			if (istype(A, /area/complex/nomads/ice/target))
 				for(var/i in points)
 					if (i[1]==PJ.nationality)
 						i[3]+=4
@@ -153,7 +153,7 @@ obj/map_metadata/gulag13/job_enabled_specialcheck(var/datum/job/J)
 		for(var/mob/living/carbon/human/H in player_list)
 			if(H.stat!=DEAD && H.original_job && istype(H.original_job, /datum/job/civilian/prisoner) && !donecheck)
 				var/area/A = get_area(H)
-				if (istype(A, /area/caribbean/nomads/ice/target))
+				if (istype(A, /area/complex/nomads/ice/target))
 					world << "<br><font size = 3><span class = 'warning'>There are prisoners currently escaping!</span></font>"
 					donecheck = TRUE
 

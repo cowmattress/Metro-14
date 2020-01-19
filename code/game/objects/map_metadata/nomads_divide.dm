@@ -4,7 +4,7 @@
 	title = "Nomads (Jungle-Desert) (250x250x2)"
 	lobby_icon_state = "civ13"
 	no_winner ="The round is proceeding normally."
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 6000 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(CIVILIAN) = /area/caribbean/british
+		list(CIVILIAN) = /area/complex/british
 		)
 	age = "5000 B.C."
 	civilizations = TRUE
@@ -36,19 +36,19 @@
 	..()
 	spawn(2600)
 		for (var/i = 1, i <= 30, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/nomads/river))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/nomads/river))
 			new/obj/structure/fish/salmon(areaspawn)
 	spawn(2400)
 		for (var/i = 1, i <= 30, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/tribes/swamp))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/tribes/swamp))
 			new/obj/structure/fish/salmon(areaspawn)
 	spawn(2600)
 		for (var/i = 1, i <= 40, i++)
-			var/turf/areaspawn = safepick(get_area_turfs(/area/caribbean/nomads/river))
+			var/turf/areaspawn = safepick(get_area_turfs(/area/complex/nomads/river))
 			new/obj/structure/piranha(areaspawn)
 	spawn(2700)
 		for (var/i = 1, i <= 15, i++)
-			var/turf/areaspawn2 = safepick(get_area_turfs(/area/caribbean/nomads/forest))
+			var/turf/areaspawn2 = safepick(get_area_turfs(/area/complex/nomads/forest))
 			new/obj/structure/anthill(areaspawn2)
 
 	spawn(1200)

@@ -4,7 +4,7 @@
 	title = "Kenobi's Test Map"
 	no_winner ="The round is proceeding normally."
 	lobby_icon_state = "ww2"
-	caribbean_blocking_area_types = list(/area/caribbean/no_mans_land/invisible_wall/)
+	caribbean_blocking_area_types = list(/area/complex/no_mans_land/invisible_wall/)
 	respawn_delay = 1200 // 10 minutes!
 	squad_spawn_locations = FALSE
 //	min_autobalance_players = 90
@@ -13,7 +13,7 @@
 	available_subfactions = list(
 		)
 	roundend_condition_sides = list(
-		list(JAPANESE) = /area/caribbean/british
+		list(JAPANESE) = /area/complex/british
 		)
 	age = "1943"
 	civilizations = FALSE

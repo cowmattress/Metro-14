@@ -556,7 +556,7 @@
 	var/obj/map_metadata/gladiators/GD = map
 	var/area/A = get_area_name(arena)
 	var/area/B = get_area_name("Arena IV outer ring")
-	var/turf/TGT = pick_area_turf(/area/caribbean/roman/armory/loot2)
+	var/turf/TGT = pick_area_turf(/area/complex/roman/armory/loot2)
 	var/mob/living/carbon/human/WINNER
 	var/count = 0
 	for(var/mob/living/carbon/human/GLAD in A)
@@ -647,7 +647,7 @@
 				if (istype(I, /obj/item/organ) || istype(I,/obj/item/weapon/material/shard) || istype(I, /obj/item/weapon/reagent_containers/food))
 					qdel(I)
 				else
-					I.loc = pick_area_turf(/area/caribbean/roman/armory/loot)
+					I.loc = pick_area_turf(/area/complex/roman/armory/loot)
 			for (var/obj/effect/decal/cleanable/C in A)
 				qdel(C)
 			if (A.name == "Arena IV")
@@ -660,7 +660,7 @@
 					if (istype(I, /obj/item/organ) || istype(I,/obj/item/weapon/material/shard) || istype(I, /obj/item/weapon/reagent_containers/food))
 						qdel(I)
 					else
-						I.loc = pick_area_turf(/area/caribbean/roman/armory/loot)
+						I.loc = pick_area_turf(/area/complex/roman/armory/loot)
 				for (var/obj/effect/decal/cleanable/C in B)
 					qdel(C)
 	if (user)
@@ -676,7 +676,7 @@
 		if (istype(I, /obj/item/organ) || istype(I,/obj/item/weapon/material/shard) || istype(I, /obj/item/weapon/reagent_containers/food))
 			qdel(I)
 		else
-			I.loc = pick_area_turf(/area/caribbean/roman/armory/loot)
+			I.loc = pick_area_turf(/area/complex/roman/armory/loot)
 	for (var/obj/effect/decal/cleanable/C in A)
 		qdel(C)
 	if (A.name == "Arena IV")
@@ -689,7 +689,7 @@
 			if (istype(I, /obj/item/organ) || istype(I,/obj/item/weapon/material/shard) || istype(I, /obj/item/weapon/reagent_containers/food) || istype(I,/obj/item/clothing/shoes/roman) || istype(I,/obj/item/clothing/under/celtic_green) || istype(I,/obj/item/clothing/under/celtic_red) || istype(I,/obj/item/clothing/under/celtic_blue))
 				qdel(I)
 			else
-				I.loc = pick_area_turf(/area/caribbean/roman/armory/loot)
+				I.loc = pick_area_turf(/area/complex/roman/armory/loot)
 		for (var/obj/effect/decal/cleanable/C in B)
 			qdel(C)
 	return
